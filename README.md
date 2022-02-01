@@ -120,11 +120,15 @@ Note the special ":id" syntax. That means that the page can use the "id" paramet
 
 This is a static landing page for users who arrive at the site, and are not signed in yet.
 
+![image](https://user-images.githubusercontent.com/749094/152058932-db043fd5-0c6d-44d3-b4a5-70e8be99901f.png)
+
 On this page, we introduce another Medplum React component: `<Document>`. `<Document>` can be used to create a surface on the page for content. It creates a bordered section with white background and shadow.
 
 ## SignInPage.jsx
 
 Here is our sign in page. While a sign in page might seem simple, there is a ton of hidden complexity. Luckily, we can use the Medplum React component `<SignInForm>` to make life easier.
+
+![image](https://user-images.githubusercontent.com/749094/152058969-b29544b5-e2fe-4648-b3c1-07ff921665f7.png)
 
 All we have to do is provide a success callback:
 
@@ -137,6 +141,8 @@ That says: "When the user successfully authenticates, nagivate to the URL '/'".
 ## HomePage.jsx
 
 When a user visits the site, and is signed in, they will see `HomePage.jsx` by default.
+
+![image](https://user-images.githubusercontent.com/749094/152059030-72d17644-9010-46ca-814b-39bb6868c517.png)
 
 The `<HomePage>` component is pretty short -- only about 20 lines -- but there is a lot going on. Let's break it down line by line.
 
@@ -195,6 +201,8 @@ Note the `<ResourceBadge>` component. That is a Medplum React component that sho
 ## PatientPage.jsx
 
 Our final page is the patient page, where will dump the patient data. This is where you can customize everything to your specific needs.
+
+![image](https://user-images.githubusercontent.com/749094/152059055-82b07fce-7dc3-4a3d-92a0-ce27a0cf1473.png)
 
 This page is composed of concepts that we have already seen before. Let's quickly review:
 
